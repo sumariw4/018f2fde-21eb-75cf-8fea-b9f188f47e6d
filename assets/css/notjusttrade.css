@@ -236,7 +236,9 @@ header
 */
 
 .background-header {
-  background-color: #fff;
+  background-color: transparent!important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   height: 80px!important;
   position: fixed!important;
   top: 0px;
@@ -296,7 +298,7 @@ header
   margin-top: 27px;
   margin-left: 0%;
   margin-right: 0px;
-  background-color: #fff;
+  background-color: transparent !important;
   padding: 0px 20px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -557,7 +559,7 @@ header
     float: none!important;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: transparent!important;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
@@ -599,9 +601,9 @@ header
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
-    padding: 0px !important;
-    border: none !important;
-    background: #f7f7f7 !important;
+    padding-left: 10px !important;
+    border: 0.05px solid #eee;
+    /* background: #f7f7f7 !important; */
     color: #191a20 !important;
   }
   .header-area .main-nav .nav li a:hover {
@@ -623,6 +625,7 @@ header
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
     font-weight: 400;
+    padding-left: 10px !important;
   }
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
@@ -1235,10 +1238,61 @@ preloader
   }
 }
 
+.logo-fix{
+  width: 60px; 
+  height: auto;
+}
+
+.header-area .main-nav .nav li {
+  border: none !important;
+}
+
+.header-area .main-nav .nav li.submenu ul li a {
+  padding-left: 20px !important;
+}
+
+.li-detail-one {
+  display: flex !important;
+}
+
+.img-li-one {
+  width: 90px;
+  height: auto;
+}
+
+#promotion .right-text h4 {
+  padding-top: 0px !important;
+}
+
 @media screen and (max-width: 500px) {
+  .img-li-one {
+    width: 50px;
+    height: auto;
+  }
+
   .text-hero-one {
     font-size: 35px !important;
     line-height: 50px !important;
+  }
+
+  .logo-fix{
+    width: 40px; 
+    height: auto;
+  }
+
+  .container .row .col-12 {
+    background-color: #FFF;
+  }
+
+  .header-sticky .container .row .col-12 {
+    background-color: transparent !important;
+  }
+  .header-area .main-nav .nav {
+    padding: 0px !important    
+  };
+
+  .nav {
+    background-color: #FFF;
   }
   
 }
