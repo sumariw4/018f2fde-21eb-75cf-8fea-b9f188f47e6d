@@ -42,6 +42,33 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+  /* border-radius: 20px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f4813f;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1556a;
+}
+
+/* Set position of the scrollbar */
+::-webkit-scrollbar {
+  position: absolute;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
