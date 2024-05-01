@@ -28,7 +28,7 @@
     if (width > 500) {
       header = $("header").height() + 550;
     } else {
-      header = $("header").height() + 250;
+      header = $("header").height();
     }
 
     if (scroll >= box - header) {
